@@ -1,0 +1,126 @@
+/* Basic Clean Styles */
+:root {
+  --primary: #4a90e2;
+  --bg: #f5f6fa;
+  --text: #333;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 2rem;
+}
+
+/* Dashboard */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-left: 5px solid #ccc;
+}
+
+.task-card.completed {
+  border-left-color: #2ecc71;
+  opacity: 0.7;
+}
+
+.task-card.pending {
+  border-left-color: #f1c40f;
+}
+
+.category-badge {
+  background: #eee;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+}
+
+button, .edit-btn, .delete-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+button {
+  background: #e0e0e0;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.edit-btn {
+  background: #3498db;
+  color: white;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.details-page {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
