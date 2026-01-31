@@ -14,12 +14,13 @@ function App() {
         <div className="app-container">
           <nav className="navbar">
             <h1>Event Planner</h1>
+            <h4>Devasani vaishnapallavi</h4>
             <div className="links">
               <Link to="/">Dashboard</Link>
               <Link to="/add">Add Task</Link>
             </div>
           </nav>
-          
+
           <main className="content">
             <Routes>
               <Route path="/" element={<Dashboard />} />
